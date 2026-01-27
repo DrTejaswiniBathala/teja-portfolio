@@ -125,4 +125,61 @@ export const cv = {
   notes: [
     "Financial sponsorship and activities through Global Students Nest mentioned in CV.",
   ],
+
+  // Add this at the END of cv.js
+
+references: [
+  {
+    name: "Prof. Piet Kommers",
+    designation: "Emeritus Professor",
+    affiliation: "University of Twente",
+    country: "Netherlands",
+    note: "International Research Collaboration & Academic Advisory"
+  },
+  {
+    name: "Prof. Vincenzo Piuri",
+    designation: "Professor of Computer Engineering",
+    affiliation: "University of Milan",
+    country: "Italy",
+    note: "Research & Editorial Collaborations"
+  },
+  {
+    name: "Prof. Ketan Kotecha",
+    designation: "Director",
+    affiliation: "Symbiosis Institute of Technology",
+    country: "India",
+    note: "Joint Research, Publications & PhD Mentorship"
+  },
+  {
+    name: "Prof. Logesh Ravi",
+    designation: "Professor",
+    affiliation: "University of Technology Sydney",
+    country: "Australia",
+    note: "AI, IoT & Healthcare Research Collaborations"
+  },
+  {
+    name: "Prof. Stephen Afrifa",
+    designation: "Senior Researcher",
+    affiliation: "International Research Collaborator",
+    country: "Ghana",
+    note: "Joint Publications & Funded Research Projects"
+  },
+  {
+    name: "Prof. Deshinta Arrova Dewi",
+    designation: "Associate Professor",
+    affiliation: "Diponegoro University",
+    country: "Indonesia",
+    note: "International Academic & Research Collaborations"
+  },
+  {
+    name: "Prof. Tao Zhang",
+    designation: "Professor",
+    affiliation: "International Research Collaborator",
+    country: "China",
+    note: "Joint Research & Publications"
+  }
+]
+
 };
+
+

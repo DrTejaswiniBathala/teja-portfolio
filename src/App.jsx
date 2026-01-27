@@ -6,14 +6,16 @@ export default function App() {
   const telSafe = (cv.phone || "").replace(/[^\d+]/g, "");
 
   const nav = [
-    { id: "summary", label: "Summary" },
-    { id: "experience", label: "Experience" },
-    { id: "education", label: "Education" },
-    { id: "achievements", label: "Achievements" },
-    { id: "funding", label: "Funding" },
-    { id: "development", label: "Development" },
-    { id: "fullcv", label: "Full CV" },
-  ];
+  { id: "summary", label: "Summary" },
+  { id: "experience", label: "Experience" },
+  { id: "education", label: "Education" },
+  { id: "achievements", label: "Achievements" },
+  { id: "funding", label: "Funding" },
+  { id: "development", label: "Development" },
+  { id: "references", label: "References" },   // 👈 ADD THIS
+  { id: "fullcv", label: "Full CV" },
+];
+
 
   return (
     <div className="page">
@@ -132,6 +134,36 @@ export default function App() {
           </Section>
         ) : null}
 
+{cv.references?.length ? (
+  <Section id="references" title="References">
+    <div className="stack">
+      {cv.references.map((ref, idx) => (
+        <article className="card" key={idx}>
+          <h3 className="card-title">{ref.name}</h3>
+          <p className="card-sub">
+            {ref.designation}, {ref.affiliation}
+          </p>
+          <p className="card-period">
+            {ref.country}
+          </p>
+
+          {ref.note ? (
+            <p className="text" style={{ marginTop: "8px", fontSize: "14px" }}>
+              {ref.note}
+            </p>
+          ) : null}
+        </article>
+      ))}
+    </div>
+
+    <p className="hint">
+      Full contact details can be shared upon formal request.
+    </p>
+  </Section>
+) : null}
+
+
+
       <Section id="fullcv" title="Full CV (PDF)">
   {cv.pdf ? (
     <div className="pdfActions">
@@ -210,3 +242,5 @@ function CollapsibleList({ items = [], initialCount = 8 }) {
     </>
   );
 }
+
+
