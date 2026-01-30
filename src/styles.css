@@ -357,6 +357,93 @@ code{
   flex-wrap: wrap;
 }
 
+/* ===== Image Carousel ===== */
+.carousel {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carousel-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #f4f4f4;
+}
+
+/* ===== Image Carousel (No Crop – Full Image Visible) ===== */
+.carousel-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #f6f6f6; /* neutral backdrop for tall images */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-img {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;   /* 🔥 KEY CHANGE */
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.carousel-img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+.carousel-img.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #cfcfcf;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.carousel-dots .dot.active {
+  background: #222;
+  transform: scale(1.2);
+}
+
+.carousel-dots .dot:hover {
+  background: #555;
+}
+
+/* Center caption below carousel */
+.carousel-caption {
+  text-align: center;
+  margin-top: 14px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 /* Footer */
 .footer{
   margin-top: 18px;
@@ -494,3 +581,6 @@ code{
     50% { transform: translateY(-50%) translateX(2px); }
   }
 }
+
+
+

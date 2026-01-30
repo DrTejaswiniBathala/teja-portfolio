@@ -1,6 +1,23 @@
 import React from "react";
 import { cv } from "./data/cv";
 import profile from "./assets/profile.jpg";
+import img1 from "./assets/img1.jpg";
+import img2 from "./assets/img2.jpg";
+import img3 from "./assets/img3.jpg";
+import img4 from "./assets/img4.jpg";
+import img5 from "./assets/img5.jpg";
+import img6 from "./assets/img6.jpg";
+import img7 from "./assets/img7.jpg";
+import img8 from "./assets/img8.jpg";
+import img9 from "./assets/img9.jpg";
+import img10 from "./assets/img10.jpg";
+import img11 from "./assets/img11.jpg";
+import img12 from "./assets/img12.jpg";
+
+
+
+
+
 
 export default function App() {
   const telSafe = (cv.phone || "").replace(/[^\d+]/g, "");
@@ -13,8 +30,46 @@ export default function App() {
   { id: "funding", label: "Funding" },
   { id: "development", label: "Development" },
   { id: "references", label: "References" },   // 👈 ADD THIS
+  { id: "engagements", label: "Engagements" },
   { id: "fullcv", label: "Full CV" },
 ];
+
+function ImageCarousel({ images = [], interval = 4000 }) {
+  const [index, setIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, interval);
+    return () => clearInterval(timer);
+  }, [images.length, interval]);
+
+  return (
+    <div className="carousel">
+      <div className="carousel-frame">
+        {images.map((img, i) => (
+          <img
+            key={i}
+            src={img}
+            alt={`engagement-${i + 1}`}
+            className={`carousel-img ${i === index ? "active" : ""}`}
+          />
+        ))}
+      </div>
+
+      <div className="carousel-dots">
+        {images.map((_, i) => (
+          <button
+            key={i}
+            className={`dot ${i === index ? "active" : ""}`}
+            onClick={() => setIndex(i)}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 
   return (
@@ -164,7 +219,26 @@ export default function App() {
 
 
 
-      <Section id="fullcv" title="Full CV (PDF)">
+<Section
+  id="engagements"
+  title="Professional Engagements & Global Presence"
+>
+  <ImageCarousel
+    images={[
+      img1, img2, img3, img4, img5, img6,
+      img7, img8, img9, img10, img11, img12
+    ]}
+  />
+
+  <p className="hint carousel-caption">
+  Selected moments from international conferences, academic meetings,
+  collaborations, and professional engagements.
+</p>
+
+</Section>
+
+
+<Section id="fullcv" title="Full CV (PDF)">
   {cv.pdf ? (
     <div className="pdfActions">
       <a className="btn btn-soft" href={cv.pdf} target="_blank" rel="noreferrer">
@@ -180,6 +254,7 @@ export default function App() {
     </p>
   )}
 </Section>
+
 
 
         <footer className="footer">
