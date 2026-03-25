@@ -178,13 +178,11 @@ function App() {
   const education = [
     {
       title: "MBA, Pharmaceutical Management",
-      place: "IIHMR University Jaipur",
-      period: "2020 – 2022",
+      place: "Indian Institute of Health Management Research University, Jaipur",
     },
     {
       title: "Doctor of Pharmacy (PharmD)",
-      place: "JNTU Anantapur",
-      period: "2014 – 2020",
+      place: "Jawaharlal Nehru Technological University, Anantapur",
     },
   ];
 
@@ -213,7 +211,44 @@ function App() {
             <a href="#ventures" className="topnav-link">Ventures</a>
             <a href="#projects" className="topnav-link">Projects</a>
             <a href="#experience" className="topnav-link">Experience</a>
-            <a href="#contact" className="topnav-link">Contact</a>
+            <a href="#contact" className="topnav-link">Achievements</a>
+            <a href="#explore-platforms" className="topnav-link">Explore my platforms</a>
+            <div className="topnav-socials">
+  <a
+    href="https://www.instagram.com/itsme_.teja/?hl=en"
+    target="_blank"
+    rel="noreferrer"
+    className="topnav-icon"
+    aria-label="Instagram"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      width="18"
+      height="18"
+    >
+      <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.75 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Z" />
+    </svg>
+  </a>
+
+  <a
+    href="mailto:drtejaswinibathala@gmail.com"
+    className="topnav-icon"
+    aria-label="Email"
+    title="drtejaswinibathala@gmail.com"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      width="18"
+      height="18"
+    >
+      <path d="M3.75 5.5h16.5A1.75 1.75 0 0 1 22 7.25v9.5A1.75 1.75 0 0 1 20.25 18.5H3.75A1.75 1.75 0 0 1 2 16.75v-9.5A1.75 1.75 0 0 1 3.75 5.5Zm0 1.5v.2l8.25 5.54 8.25-5.54V7H3.75Zm16.75 10V8.51l-8.08 5.43a.75.75 0 0 1-.84 0L3.5 8.51V17h17Z" />
+    </svg>
+  </a>
+</div>
           </div>
         </nav>
 
@@ -224,7 +259,7 @@ function App() {
               Dr Tejaswini <span>Bathala</span>
             </h1>
             <p className="hero-role">
-              Entrepreneur • Healthcare IT Professional • 
+              Entrepreneur • Medical Devices & Diagnostic Solutions • Healthcare IT Professional • 
               Modern Vedic Astrologer • PharmD • MBA
             </p>
             <p className="hero-text">
@@ -257,23 +292,7 @@ function App() {
             </div>
           </div>
 
-<a
-  className="social-icon"
-  href="https://www.instagram.com/itsme_.teja/?hl=en"
-  target="_blank"
-  rel="noreferrer"
-  aria-label="Instagram"
->
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    width="20"
-    height="20"
-  >
-    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.75 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Z" />
-  </svg>
-</a>
+
 
           <div className="hero-right">
             <div className="portrait-card">
@@ -291,7 +310,7 @@ function App() {
               </div>
               <div className="floating-item">
                 <span className="floating-label">Executive Director</span>
-                <strong>TeSh Events,India</strong>
+                <strong>TeSh Events, India</strong>
               </div>
             </div>
           </div>
@@ -308,11 +327,11 @@ function App() {
           </div>
           <div className="stat-card">
             <h3>EMR / ERP</h3>
-            <p>Healthcare Technology Focus</p>
+            <p>HealthTech Solutions for Corporate Hospitals and Industries through Electronic Medical Records (EMR) and Enterprise Resource Planning (ERP)</p>
           </div>
           <div className="stat-card">
-            <h3>Founder</h3>
-            <p>Multi-Platform Professional Identity</p>
+            <h3>Drug Researcher</h3>
+            <p>Disease Specific Allopathic Medicine Advisor</p>
           </div>
         </section>
 
@@ -482,7 +501,7 @@ function App() {
               </div>
             </div>
 
-           <div className="contact-cta">
+          <section className="contact-cta" id="explore-platforms">
   <h3>Explore My Platforms</h3>
 
   <div className="platform-logos">
@@ -496,26 +515,28 @@ function App() {
         <div className="platform-logo-card">
           <img src="/tesh-acad-logo.png" alt="TeSh Acad" />
         </div>
-        <span>TeSh Acad</span>
       </a>
 
-      <a
-        href="https://www.instagram.com/tesh_acad/?hl=en"
-        target="_blank"
-        rel="noreferrer"
-        className="platform-insta"
-        aria-label="TeSh Acad Instagram"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          width="18"
-          height="18"
+      <div className="platform-name-row">
+        <span>TeSh Acad</span>
+        <a
+          href="https://www.instagram.com/tesh_acad/?hl=en"
+          target="_blank"
+          rel="noreferrer"
+          className="platform-insta"
+          aria-label="TeSh Acad Instagram"
         >
-          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.75 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Z" />
-        </svg>
-      </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            width="16"
+            height="16"
+          >
+            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.75 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Z" />
+          </svg>
+        </a>
+      </div>
     </div>
 
     <div className="platform-logo-group">
@@ -528,26 +549,28 @@ function App() {
         <div className="platform-logo-card">
           <img src="/tesh-events-logo.png" alt="TeSh Events" />
         </div>
-        <span>TeSh Events</span>
       </a>
 
-      <a
-        href="https://www.instagram.com/tesh.events/?hl=en"
-        target="_blank"
-        rel="noreferrer"
-        className="platform-insta"
-        aria-label="TeSh Events Instagram"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          width="18"
-          height="18"
+      <div className="platform-name-row">
+        <span>TeSh Events</span>
+        <a
+          href="https://www.instagram.com/tesh.events/?hl=en"
+          target="_blank"
+          rel="noreferrer"
+          className="platform-insta"
+          aria-label="TeSh Events Instagram"
         >
-          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.75 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Z" />
-        </svg>
-      </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            width="16"
+            height="16"
+          >
+            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.75 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Z" />
+          </svg>
+        </a>
+      </div>
     </div>
 
     <div className="platform-logo-group">
@@ -560,36 +583,41 @@ function App() {
         <div className="platform-logo-card">
           <img src="/astrotej-logo.png" alt="AstroTej" />
         </div>
-        <span>AstroTej</span>
       </a>
 
-      <a
-        href="https://www.instagram.com/astro_.tej/?hl=en"
-        target="_blank"
-        rel="noreferrer"
-        className="platform-insta"
-        aria-label="AstroTej Instagram"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          width="18"
-          height="18"
+      <div className="platform-name-row">
+        <span>AstroTej</span>
+        <a
+          href="https://www.instagram.com/astro_.tej/?hl=en"
+          target="_blank"
+          rel="noreferrer"
+          className="platform-insta"
+          aria-label="AstroTej Instagram"
         >
-          <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.75 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Z" />
-        </svg>
-      </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            width="16"
+            height="16"
+          >
+            <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5Zm8.75 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Z" />
+          </svg>
+        </a>
+      </div>
     </div>
   </div>
-</div>
-
 </section>
+</section>
+<footer className="site-footer">
+  <p>© 2026 Dr Tejaswini Bathala. All rights reserved.</p>
+</footer>
         </main>
       </div>
     </div>
   );
 }
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
