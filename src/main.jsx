@@ -310,7 +310,7 @@ function App() {
               </div>
               <div className="floating-item">
                 <span className="floating-label">Executive Director</span>
-                <strong>Shravya Vani Events, India</strong>
+                <strong>TeSh Events, India</strong>
               </div>
             </div>
           </div>
