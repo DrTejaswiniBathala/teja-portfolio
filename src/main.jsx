@@ -302,7 +302,7 @@ function App() {
             <div className="floating-panel">
               <div className="floating-item">
                 <span className="floating-label">Founder</span>
-                <strong>AstroTej</strong>
+                <strong>Dr Tejaswini Healthcare Solutions Pvt Ltd ; AstroTej</strong>
               </div>
               <div className="floating-item">
                 <span className="floating-label">CTO</span>
@@ -310,7 +310,7 @@ function App() {
               </div>
               <div className="floating-item">
                 <span className="floating-label">Executive Director</span>
-                <strong>TeSh Events, India</strong>
+                <strong>Shravya Vani Events, India</strong>
               </div>
             </div>
           </div>
@@ -326,8 +326,8 @@ function App() {
             <p>Business Analysis Experience</p>
           </div>
           <div className="stat-card">
-            <h3>EMR / ERP</h3>
-            <p>HealthTech Solutions for Corporate Hospitals and Industries through Electronic Medical Records (EMR) and Enterprise Resource Planning (ERP)</p>
+            <h3>Healthcare Solutions</h3>
+            <p>For Healthcare industries, Corporate Hospitals, Clinics, Hospital systems, Medical devices and Diagnostics, Digital healthTech (EMR, ERP...).</p>
           </div>
           <div className="stat-card">
             <h3>Drug Researcher</h3>
