@@ -475,7 +475,7 @@ function App() {
 
           <section className="section section-split" id="contact">
             <div className="section-intro">
-              <p className="section-kicker">Academic & Skills</p>
+              <p className="section-kicker">Qualification</p>
               <h2>Education + Achievements</h2>
             </div>
 
