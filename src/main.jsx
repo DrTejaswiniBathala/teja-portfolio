@@ -301,15 +301,15 @@ function App() {
 
             <div className="floating-panel">
               <div className="floating-item">
-                <span className="floating-label">Founder</span>
-                <strong>Dr Tejaswini Healthcare Solutions Pvt Ltd ; AstroTej</strong>
+                <span className="floating-label">Founder and Director</span>
+                <strong>Dr Tejaswini Bathala Health Tech Solutions Pvt Ltd ; AstroTej</strong>
               </div>
               <div className="floating-item">
                 <span className="floating-label">CTO</span>
                 <strong>TeSh Acad</strong>
               </div>
               <div className="floating-item">
-                <span className="floating-label">Executive Director</span>
+                <span className="floating-label">Managing Director</span>
                 <strong>TeSh Events, India</strong>
               </div>
             </div>
